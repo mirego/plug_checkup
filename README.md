@@ -65,7 +65,7 @@ A check is a function with arity zero, which should return either :ok or {:error
 
 PlugCheckup should return either 200 or 500 statuses, Content-Type header "application/json", and the body should respect [this](priv/schemas/health_check_response.json) JSON schema
 
-If your configure the `error_code` option when initializing the plug, the specified value will be used when an error occurs instead of the 500 status.
+If you configure the `error_code` option when initializing the plug, the specified value will be used when an error occurs instead of the 500 status.
 
 ## Demo
 
